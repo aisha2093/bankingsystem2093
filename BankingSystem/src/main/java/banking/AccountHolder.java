@@ -7,14 +7,16 @@ public abstract class AccountHolder {
 	 * @param idNumber The government-issued ID used during account setup.
 	 */
 	public AccountHolder(int idNumber){
-		// complete the function
+		this.idNumber = idNumber;
 	}
 
 	/**
 	 * @return private int {@link AccountHolder#idNumber}
 	 */
 	public int getIdNumber() {
-		// complete the function
+		if(idNumber > 0)
+			return idNumber;
+		else
         return -1;
 	}
 }
